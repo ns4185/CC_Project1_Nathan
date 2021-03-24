@@ -1,26 +1,154 @@
+//BACKGROUND CURVES
 let streak1;
 let streak2;
 let streak3;
 let streak4;
 let streak5;
+let streak6;
 
+//CLOUDS-BACKGROUND
+let backgroundcloud1;
+let backgroundcloud2;
+let backgroundcloud3;
+let backgroundcloud4;
+let backgroundcloud5;
+let backgroundcloud6;
+let backgroundcloud7;
+let backgroundcloud8;
+let backgroundcloud9;
+let backgroundcloud10;
+let backgroundcloud11;
+let backgroundcloud12;
+let backgroundcloud13;
+let backgroundcloud14;
+let backgroundcloud15;
+let backgroundcloud16;
+let backgroundcloud17;
+let backgroundcloud18;
+let backgroundcloud19;
+let backgroundcloud20;
+let backgroundcloud21;
+let backgroundcloud22;
+let backgroundcloud23;
+let backgroundcloud24;
+let backgroundcloud25;
+let backgroundcloud26;
+let backgroundcloud27;
+let backgroundcloud28;
+let backgroundcloud29;
+let backgroundcloud30;
+let backgroundcloud31;
+let backgroundcloud32;
+let backgroundcloud33;
+let backgroundcloud34;
+let backgroundcloud35;
+let backgroundcloud36;
+let backgroundcloud37;
+let backgroundcloud38;
+let backgroundcloud39;
+let backgroundcloud40;
+let backgroundcloud41;
+let backgroundcloud42;
+let backgroundcloud43;
+let backgroundcloud44;
+let backgroundcloud45;
+let backgroundcloud46;
+let backgroundcloud47;
+let backgroundcloud48;
+let backgroundcloud49;
+let backgroundcloud50;
+let backgroundcloud51;
+let backgroundcloud52;
+let backgroundcloud53;
+let backgroundcloud54;
+
+
+let backgroundcluster1;
+let backgroundcluster2;
+let backgroundcluster3;
+let backgroundcluster4;
+let backgroundcluster5;
 
 
 function setup(){
-    createCanvas(1000,500);
+    createCanvas(1000,600);
 
+    //BACKGROUND CURVES
     streak1 = new SkyStreak();
     streak2 = new SkyStreak();
     streak3 = new SkyStreak();
     streak4 = new SkyStreak();
     streak5 = new SkyStreak();
-    
+    streak6 = new SkyStreak();
+
+    //CLOUDS
+    backgroundcloud1 = new Cloud();
+    backgroundcloud2 = new Cloud();
+    backgroundcloud3 = new Cloud();
+    backgroundcloud4 = new Cloud();
+    backgroundcloud5 = new Cloud();
+    backgroundcloud6 = new Cloud();
+    backgroundcloud7 = new Cloud();
+    backgroundcloud8 = new Cloud();
+    backgroundcloud9 = new Cloud();
+    backgroundcloud10 = new Cloud();
+    backgroundcloud11 = new Cloud();
+    backgroundcloud12 = new Cloud();
+    backgroundcloud13 = new Cloud();
+    backgroundcloud14 = new Cloud();
+    backgroundcloud15 = new Cloud();
+    backgroundcloud16 = new Cloud();
+    backgroundcloud17 = new Cloud();
+    backgroundcloud18 = new Cloud();
+    backgroundcloud19 = new Cloud();
+    backgroundcloud20 = new Cloud();
+    backgroundcloud21 = new Cloud();
+    backgroundcloud22 = new Cloud();
+    backgroundcloud23 = new Cloud();
+    backgroundcloud24 = new Cloud();
+    backgroundcloud25 = new Cloud();
+    backgroundcloud26 = new Cloud();
+    backgroundcloud27 = new Cloud();
+    backgroundcloud28 = new Cloud();
+    backgroundcloud29 = new Cloud();
+    backgroundcloud30 = new Cloud();
+    backgroundcloud31 = new Cloud();
+    backgroundcloud32 = new Cloud();
+    backgroundcloud33 = new Cloud();
+    backgroundcloud34 = new Cloud();
+    backgroundcloud35 = new Cloud();
+    backgroundcloud36 = new Cloud();
+    backgroundcloud37 = new Cloud();
+    backgroundcloud38 = new Cloud();
+    backgroundcloud39 = new Cloud();
+    backgroundcloud40 = new Cloud();
+    backgroundcloud41 = new Cloud();
+    backgroundcloud42 = new Cloud();
+    backgroundcloud43 = new Cloud();
+    backgroundcloud44 = new Cloud();
+    backgroundcloud45 = new Cloud();
+    backgroundcloud46 = new Cloud();
+    backgroundcloud47 = new Cloud();
+    backgroundcloud48 = new Cloud();
+    backgroundcloud49 = new Cloud();
+    backgroundcloud50 = new Cloud();
+    backgroundcloud51 = new Cloud();
+    backgroundcloud52 = new Cloud();
+    backgroundcloud53 = new Cloud();
+    backgroundcloud54 = new Cloud();
+
+    backgroundcluster1 = new Cluster();
+    backgroundcluster2 = new Cluster();
+    backgroundcluster3 = new Cluster();
+    backgroundcluster4 = new Cluster();
+    backgroundcluster5 = new Cluster();
 }
 
 function draw(){
     background('#01749F'); //"sky" color
 
-    streak1.display(100); //5 curves in the background
+    //BACKGROUND CURVES
+    streak1.display(100); //6 curves in the background
     streak1.update();
 
     push(); //pushing and popping matrixes with small rotation and position changes to make each curve a tiny bit different
@@ -31,7 +159,7 @@ function draw(){
     pop();
 
     push();
-    rotate(radians(-4));
+    rotate(radians(-3));
     translate(-20,0);
     streak3.display(300);
     streak3.update();
@@ -47,5 +175,139 @@ function draw(){
     streak5.display(500);
     streak5.update();
 
+    streak6.display(20);
+    streak6.update();
+    
+
+    //BACKGROUND CLOUDS
+    //xPos,size,cloudheight, cloudbottom, cloudcolor,cloudspacing (note for self)
+    backgroundcloud1.display(990,20,20,485,255,5);
+
+    backgroundcloud2.display(995,20,22,485,255,2);
+
+    backgroundcloud3.display(960,80,40,485,255,20);
+
+    backgroundcloud4.display(930,30,30,485,255,10);
+
+    backgroundcloud7.display(900,30,30,485,220,10);
+
+    backgroundcloud5.display(915,30,30,485,255,10);
+
+    backgroundcloud8.display(870,40,36,485,200,15);
+
+    backgroundcloud6.display(890,28,36,485,255,4);
+
+    backgroundcloud9.display(865,30,50,485,255,5);
+
+    backgroundcloud10.display(840,35,50,485,255,10)
+
+    backgroundcloud12.display(808,20,70,485,200,5)
+
+    backgroundcloud11.display(820,30,50,485,255,10)
+
+    backgroundcloud13.display(805,20,75,485,255,5);
+
+    backgroundcloud14.display(790,20,90,485,255,5);
+
+    backgroundcloud15.display(770,30,100,485,255,10);
+
+    backgroundcloud16.display(760,20,105,485,255,5);
+
+    backgroundcloud17.display(745,20,105,485,255,5);
+
+    backgroundcloud18.display(720,50,120,485,255,10);
+
+    backgroundcloud21.display(680,50,130,485,200,10);
+
+    backgroundcloud19.display(700,20,120,485,255,5);
+
+    backgroundcloud20.display(690,20,122,485,255,2);
+  
+    backgroundcloud22.display(670,40,130,485,255,10);
+    
+    backgroundcloud23.display(650,30,140,485,255,10);
+
+    backgroundcloud24.display(640,20,138,485,255,2);
+
+    backgroundcloud25.display(630,20,135,485,255,5);
+
+    backgroundcloud29.display(570,30,125,485,190,5);
+
+    backgroundcloud26.display(610,40,135,485,255,10);
+
+    backgroundcloud27.display(595,20,124,485,255,2);
+
+    backgroundcloud29.display(588,15,128,485,200,2);
+
+    backgroundcloud28.display(588,18,132,485,255,2);
+
+    backgroundcloud30.display(569,28,129,485,255,3);
+
+    backgroundcloud31.display(560,20,125,485,255,5);
+
+    backgroundcloud32.display(550,20,120,485,255,4);
+    
+    backgroundcloud33.display(540,20,118,485,255,2);
+
+    backgroundcloud34.display(530,25,125,485,255,5);
+
+    backgroundcloud35.display(515,30,140,485,255,5);
+
+    backgroundcloud36.display(500,20,145,485,255,2); //halfway!
+
+    backgroundcloud37.display(490,20,150,485,255,5);
+
+    backgroundcloud38.display(470,30,155,485,255,10);
+
+    backgroundcloud39.display(460,20,170,485,255,5);
+    
+    backgroundcloud40.display(442,20,160,485,255,2);
+
+    backgroundcloud41.display(430,20,165,485,255,5);
+
+    //xPos,size,cloudheight,cloudbottom,cloudspacing (note for self)
+
+    backgroundcluster1.display(380,20,170,485,5);
+
+    backgroundcluster2.display(320,20,200,485,5);
+
+    backgroundcluster3.display(250,40,250,485,5);
+
+    backgroundcluster4.display(200,50,300,485,10);
+
+    backgroundcluster5.display(180,30,330,485,5);
+
+
+
+
+    backgroundcloud42.display(160,20,340,485,255,4);
+
+    backgroundcloud43.display(150,30,350,485,255,5);
+
+    backgroundcloud44.display(140,20,360,485,255,2);
+
+    backgroundcloud45.display(120,30,370,485,255,2);
+
+    backgroundcloud46.display(110,20,395,485,255,2);
+
+    backgroundcloud47.display(100,20,400,485,255,2);
+
+    backgroundcloud48.display(80,30,410,485,255,2);
+
+    backgroundcloud49.display(70,20,400,485,255,2);
+
+    backgroundcloud50.display(50,30,420,485,255,5);
+
+    backgroundcloud51.display(40,20,430,485,255,5);
+
+    backgroundcloud52.display(30,30,450,485,255,2);
+
+    backgroundcloud53.display(10,30,455,485,255,5);
+    
+    backgroundcloud54.display(-5,30,455,485,255,5);
+
+
+    fill(150);
+    rect(0,487.5,width,200);
 }
 
