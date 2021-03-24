@@ -70,6 +70,18 @@ let backgroundcluster4;
 let backgroundcluster5;
 
 
+//CLOUDS - LAYER 1
+let layer1cloud1;
+let layer1cloud2;
+let layer1cloud3;
+let layer1cloud4;
+let layer1cloud5;
+let layer1cloud6;
+let layer1cloud7;
+let layer1cloud8;
+let layer1cloud9;
+let layer1cloud10;
+
 function setup(){
     createCanvas(1000,600);
 
@@ -81,7 +93,7 @@ function setup(){
     streak5 = new SkyStreak();
     streak6 = new SkyStreak();
 
-    //CLOUDS
+    //CLOUDS - BACKGROUND
     backgroundcloud1 = new Cloud();
     backgroundcloud2 = new Cloud();
     backgroundcloud3 = new Cloud();
@@ -142,6 +154,19 @@ function setup(){
     backgroundcluster3 = new Cluster();
     backgroundcluster4 = new Cluster();
     backgroundcluster5 = new Cluster();
+
+    //CLOUDS -LAYER 1
+    layer1cloud1 = new Cloud();
+    layer1cloud2 = new Cloud();
+    layer1cloud3 = new Cloud();
+    layer1cloud4 = new Cloud();
+    layer1cloud5 = new Cloud();
+    layer1cloud6 = new Cloud();
+    layer1cloud7 = new Cloud();
+    layer1cloud8 = new Cloud();
+    layer1cloud9 = new Cloud();
+    layer1cloud10 = new Cloud();
+
 }
 
 function draw(){
@@ -306,6 +331,29 @@ function draw(){
     
     backgroundcloud54.display(-5,30,455,485,255,5);
 
+
+    //LAYER 1 CLOUDS
+    layer1cloud1.display(380,30,200,485,255,5);
+
+    layer1cloud2.display(400,30,195,485,255,5);
+
+    layer1cloud3.display(415,20,195,485,255,5);
+
+    layer1cloud4.display(325,30,225,485,255,5);
+
+    layer1cloud5.display(340,30,220,485,255,5);
+
+    layer1cloud5.display(350,35,215,485,255,5);
+
+    layer1cloud6.display(250,50,280,485,255,10);
+
+    layer1cloud7.display(280,50,270,485,255,10);
+
+    layer1cloud8.display(300,20,260,485,255,5);
+
+    layer1cloud9.display(180,60,360,485,255,10);
+
+    layer1cloud10.display(205,50,340,485,255,5);
 
     fill(150);
     rect(0,487.5,width,200);
