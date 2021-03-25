@@ -331,56 +331,46 @@ function draw(){
 
     //BACKGROUND CLOUDS
     //xPos,size,cloudheight, cloudbottom, cloudcolor,cloudspacing (note for self)
+
+    //I'm manually inputting values into the cloud class so that I have more control over what the shape of the large background cloud is!
     backgroundcloud1.display(990,20,20,485,255,5);
     backgroundcloud1.update();
 
     backgroundcloud2.display(995,20,22,485,255,2);
     backgroundcloud2.update();
 
-
     backgroundcloud3.display(960,80,40,485,255,20);
     backgroundcloud3.update();
-
 
     backgroundcloud4.display(930,30,30,485,255,10);
     backgroundcloud4.update();
 
-
     backgroundcloud7.display(900,30,30,485,220,10);
     backgroundcloud7.update();
-
 
     backgroundcloud5.display(915,30,30,485,255,10);
     backgroundcloud5.update();
 
-
     backgroundcloud8.display(870,40,36,485,200,15);
     backgroundcloud8.update();
-
 
     backgroundcloud6.display(890,28,36,485,255,4);
     backgroundcloud6.update();
 
-
     backgroundcloud9.display(865,30,50,485,255,5);
     backgroundcloud9.update();
-
 
     backgroundcloud10.display(840,35,50,485,255,10);
     backgroundcloud10.update();
 
-
     backgroundcloud12.display(808,20,70,485,200,5);
     backgroundcloud12.update();
-
 
     backgroundcloud11.display(820,30,50,485,255,10);
     backgroundcloud11.update();
 
-
     backgroundcloud13.display(805,20,75,485,255,5);
     backgroundcloud13.update();
-
 
     backgroundcloud14.display(790,20,90,485,255,5);
     backgroundcloud14.update();
@@ -388,74 +378,56 @@ function draw(){
     backgroundcloud15.display(770,30,100,485,255,10);
     backgroundcloud15.update();
 
-
     backgroundcloud16.display(760,20,105,485,255,5);
     backgroundcloud16.update();
-
 
     backgroundcloud17.display(745,20,105,485,255,5);
     backgroundcloud17.update();
 
-
     backgroundcloud18.display(720,50,120,485,255,10);
     backgroundcloud18.update();
-
 
     backgroundcloud21.display(680,50,130,485,200,10);
     backgroundcloud21.update();
 
-
     backgroundcloud19.display(700,20,120,485,255,5);
     backgroundcloud19.update();
 
-
     backgroundcloud20.display(690,20,122,485,255,2);
     backgroundcloud20.update();
-
   
     backgroundcloud22.display(670,40,130,485,255,10);
     backgroundcloud22.update();
-
     
     backgroundcloud23.display(650,30,140,485,255,10);
     backgroundcloud23.update();
 
-
     backgroundcloud24.display(640,20,138,485,255,2);
     backgroundcloud24.update();
-
 
     backgroundcloud25.display(630,20,135,485,255,5);
     backgroundcloud25.update();
 
-
     backgroundcloud26.display(610,40,135,485,255,10);
     backgroundcloud26.update();
-
 
     backgroundcloud27.display(595,20,124,485,255,2);
     backgroundcloud27.update();
 
-
     backgroundcloud29.display(588,15,128,485,200,2);
     backgroundcloud29.update();
-
 
     backgroundcloud28.display(588,18,132,485,255,2);
     backgroundcloud28.update();
 
-
     backgroundcloud30.display(569,28,129,485,255,3);
     backgroundcloud30.update();
-
 
     backgroundcloud31.display(560,20,125,485,255,5);
     backgroundcloud31.update();
 
-
     backgroundcloud32.display(550,20,120,485,255,4);
     backgroundcloud32.update();
-
     
     backgroundcloud33.display(540,20,118,485,255,2);
     backgroundcloud33.update();
@@ -463,30 +435,23 @@ function draw(){
     backgroundcloud34.display(530,25,125,485,255,5);
     backgroundcloud34.update();
 
-
     backgroundcloud35.display(515,30,140,485,255,5);
     backgroundcloud35.update();
-
 
     backgroundcloud36.display(500,20,145,485,255,2); //halfway!
     backgroundcloud36.update();
 
-
     backgroundcloud37.display(490,20,150,485,255,5);
     backgroundcloud37.update();
-
 
     backgroundcloud38.display(470,30,155,485,255,10);
     backgroundcloud38.update();
 
-
     backgroundcloud39.display(460,20,170,485,255,5);
     backgroundcloud39.update();
-
     
     backgroundcloud40.display(442,20,160,485,255,2);
     backgroundcloud40.update();
-
 
     backgroundcloud41.display(430,20,165,485,255,5);
     backgroundcloud41.update();
@@ -500,14 +465,11 @@ function draw(){
     backgroundcluster2.display(320,20,200,485,5);
     backgroundcluster2.update();
 
-
     backgroundcluster3.display(250,40,250,485,5);
     backgroundcluster3.update();
 
-
     backgroundcluster4.display(200,50,300,485,10);
     backgroundcluster4.update();
-
 
     backgroundcluster5.display(180,30,330,485,5);
     backgroundcluster5.update();
