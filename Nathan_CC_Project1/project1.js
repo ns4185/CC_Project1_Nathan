@@ -124,6 +124,12 @@ let bird3;
 let bird4;
 let bird5;
 
+//BOATS
+let boat1;
+let boat2;
+let boat3;
+let boat4;
+
 function setup(){
     createCanvas(1000,600);
 
@@ -252,8 +258,12 @@ function setup(){
     bird3 = new Bird();
     bird4 = new Bird();
     bird5 = new Bird();
-    
 
+    //BOATS
+    boat1 = new Boat();
+    boat2 = new Boat();
+    boat3 = new Boat();
+    boat4 = new Boat();
 }
 
 function draw(){
@@ -674,6 +684,19 @@ function draw(){
     layer3cloud10.display(200,40,400,405,250,1);
     layer3cloud10.update();
 
+
+    //BOATS
+    boat1.display(20);
+    boat1.update();
+
+    boat2.display(100);
+    boat2.update();
+
+    boat3.display(500);
+    boat3.update();
+
+    boat4.display(700); //not updating this one - want to keep it stationary as part of the scenery
+
     //"WATER" - all of these rectangles are here to create a gradient effect since I don't know how to do that yet!
     fill(32.5,89.5,96.5,40);
     rect(0,487.5,width,200);
@@ -708,6 +731,15 @@ function draw(){
     rect(0,487.5,width,1);
 
     //"PIER"
+        //SHADOW
+    fill(27,94,106,180);
+    beginShape();
+    vertex(-20,600);
+    vertex(230,533);
+    vertex(120.5,533);
+    vertex(-20,555);
+    endShape();
+
         //LEFT-SIDE LEGS
     fill('#1E3A41');
     rect(45,540,10,35);
@@ -733,6 +765,7 @@ function draw(){
     vertex(130.5,500);
     vertex(0,522);
     endShape();
+
 
         //BOARDWALK THICKNESS
     fill('#1B3232');
