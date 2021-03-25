@@ -14,7 +14,7 @@ class Cloud{
     }
 
     display(xPos,size,cloudheight,cloudbottom,cloudcolor,cloudspacing){
-        if (this.position.x>1){
+        if (this.position.x>=10){
             this.position.x = 0;
            }   
 
@@ -44,7 +44,7 @@ class Cluster{
 
     display(xPos,size,cloudheight,cloudbottom,cloudspacing){
 
-        if (this.position.x>1){
+        if (this.position.x>=10){
             this.position.x = 0;
            }   
 

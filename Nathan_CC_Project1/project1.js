@@ -392,6 +392,8 @@ function draw(){
 
 
 
+    //xPos,size,cloudheight, cloudbottom, cloudcolor,cloudspacing (note for self)
+
     backgroundcloud42.display(160,20,340,485,255,4);
     backgroundcloud42.update();
 
@@ -468,5 +470,47 @@ function draw(){
 
     fill(150);
     rect(0,487.5,width,200);
+
+    //"PIER"
+        //LEFT-SIDE LEGS
+    fill('#1E3A41');
+    rect(45,540,10,35);
+    rect(90,540,8,18);
+    rect(108,530,7,20);
+    rect(145,520,5,20);
+
+        //RIGHT-SIDE LEGS
+    noStroke();
+    fill('#1F4B54');
+
+    rect(21.75,540,15,65);
+    rect(75,540,14,50);
+    rect(115.5,530,13,45);
+    rect(152.25,520,10,40);
+    rect(190,500,8,40);
+
+        //BOARDWALK
+    fill('#235660');
+    beginShape();
+    vertex(0,567);
+    vertex(250,500);
+    vertex(130.5,500);
+    vertex(0,522);
+    endShape();
+
+        //BOARDWALK THICKNESS
+    fill('#1B3232');
+    beginShape();
+    vertex(250,500);
+    vertex(250,505);
+    vertex(0,572);
+    vertex(0,567);
+    endShape();
+
+       
+
+
+
 }
+
 
