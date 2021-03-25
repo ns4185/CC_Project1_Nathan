@@ -117,6 +117,13 @@ let layer3cloud8;
 let layer3cloud9;
 let layer3cloud10;
 
+//BIRDS
+let bird1;
+let bird2;
+let bird3;
+let bird4;
+let bird5;
+
 function setup(){
     createCanvas(1000,600);
 
@@ -237,6 +244,14 @@ function setup(){
     layer3cloud9 = new Cloud();
     layer3cloud10 = new Cloud();
     layer3cloud11 = new Cloud();
+
+
+    //BIRDS
+    bird1 = new Bird();
+    bird2 = new Bird();
+    bird3 = new Bird();
+    bird4 = new Bird();
+    bird5 = new Bird();
     
 
 }
@@ -287,6 +302,21 @@ function draw(){
     rect(0,0,width,40);
     rect(0,0,width,35);
     rect(0,0,width,30);
+
+
+    fill(255,255,255,10);
+    noStroke();
+    rect(0,300,width,200);
+    rect(0,310,width,200);
+    rect(0,320,width,200);
+    rect(0,330,width,200);
+    rect(0,340,width,200);
+    rect(0,350,width,200);
+    rect(0,360,width,200);
+    rect(0,370,width,200);
+    rect(0,380,width,200);
+    rect(0,390,width,200);
+    rect(0,400,width,200);
     
 
     //BACKGROUND CLOUDS
@@ -712,6 +742,28 @@ function draw(){
     vertex(0,572);
     vertex(0,567);
     endShape();
+
+
+    //BIRDS
+    bird1.display(100,100);
+    bird1.update();
+    bird1.checkWings();
+
+    bird2.display(120,120);
+    bird2.update();
+    bird2.checkWings();
+
+    bird3.display(90,115);
+    bird3.update();
+    bird3.checkWings();
+
+    bird4.display(100,130);
+    bird4.update();
+    bird4.checkWings();
+
+    bird5.display(130,140);
+    bird5.update();
+    bird5.checkWings();
 
 }
 

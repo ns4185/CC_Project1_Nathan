@@ -4,19 +4,22 @@ class Cloud{
     constructor(){
         this.position = new createVector(0,0);
         this.velocity=new createVector();
+        this.speed = 0.1;
     }
 
     update(){
-        let speed = 0.02;
-        this.velocity = createVector(speed,0);
+        this.velocity = createVector(this.speed,0);
         this.position.add(this.velocity);
        
     }
 
     display(xPos,size,cloudheight,cloudbottom,cloudcolor,cloudspacing){
         if (this.position.x>=10){
-            this.position.x = 0;
+            this.speed=-0.1;
            }   
+        else if (this.position.x<=0){
+            this.speed=0.1;
+        }
 
         for (let yvalue=cloudbottom; yvalue>=cloudheight; yvalue-=cloudspacing){
             noStroke();
@@ -31,11 +34,11 @@ class Cluster{
     constructor(){
         this.position = new createVector(0,0);
         this.velocity=new createVector();
+        this.speed = 0.1;
     }
 
     update(){
-        let speed = 0.02;
-        this.velocity = createVector(speed,0);
+        this.velocity = createVector(this.speed,0);
         this.position.add(this.velocity);
        
     }
@@ -43,8 +46,11 @@ class Cluster{
     display(xPos,size,cloudheight,cloudbottom,cloudspacing){
 
         if (this.position.x>=10){
-            this.position.x = 0;
+            this.speed=-0.1;
            }   
+        else if (this.position.x<=0){
+            this.speed=0.1;
+        } 
 
         for (let yvalue=cloudbottom; yvalue>=cloudheight; yvalue-=cloudspacing){
             noStroke();
@@ -74,12 +80,12 @@ class randomCluster{ //fill is random values of gray
     constructor(){
         this.position = new createVector(0,0);
         this.velocity=new createVector();
+        this.speed = 0.08;
         this.colorvalue = random(20); //to include random in the fill color, but keep everything the same color
     }
 
     update(){
-        let speed = 0.02;
-        this.velocity = createVector(speed,0);
+        this.velocity = createVector(this.speed,0);
         this.position.add(this.velocity);
        
     }
@@ -87,8 +93,11 @@ class randomCluster{ //fill is random values of gray
     display(xPos,size,cloudheight,cloudbottom,cloudspacing){
 
         if (this.position.x>=10){
-            this.position.x = 0;
+            this.speed=-0.08;
            }   
+        else if (this.position.x<=0){
+            this.speed=0.08;
+        }
 
 
         for (let yvalue=cloudbottom; yvalue>=cloudheight; yvalue-=cloudspacing){
