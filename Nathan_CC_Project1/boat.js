@@ -17,7 +17,7 @@ class Boat{
 
     display(xPos){
         if (this.position.x+xPos>=1100){
-            this.position.x = -50;
+            this.position.x = -50-xPos;
            }  
 
         fill('#473C24');
