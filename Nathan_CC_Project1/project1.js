@@ -83,6 +83,28 @@ let layer1cloud9;
 let layer1cloud10;
 let layer1cloud11;
 
+//CLOUDS - LAYER 3
+let layer2cloud1;
+let layer2cloud2;
+let layer2cloud3;
+let layer2cloud4;
+let layer2cloud5;
+let layer2cloud6;
+let layer2cloud7;
+let layer2cloud8;
+let layer2cloud9;
+let layer2cloud10;
+let layer2cloud11;
+let layer2cloud12;
+let layer2cloud13;
+let layer2cloud14;
+let layer2cloud15;
+let layer2cloud16;
+let layer2cloud17;
+let layer2cloud18;
+let layer2cloud19;
+let layer2cloud20;
+
 function setup(){
     createCanvas(1000,600);
 
@@ -168,6 +190,28 @@ function setup(){
     layer1cloud9 = new Cloud();
     layer1cloud10 = new Cloud();
     layer1cloud11 = new Cloud();
+
+    //CLOUDS - LAYER 2
+    layer2cloud1 = new randomCluster();
+    layer2cloud2 = new randomCluster();
+    layer2cloud3 = new randomCluster();
+    layer2cloud4 = new randomCluster();
+    layer2cloud5 = new randomCluster();
+    layer2cloud6 = new randomCluster();
+    layer2cloud7 = new randomCluster();
+    layer2cloud8 = new randomCluster();
+    layer2cloud9 = new randomCluster();
+    layer2cloud10 = new randomCluster();
+    layer2cloud11 = new randomCluster();
+    layer2cloud12 = new randomCluster();
+    layer2cloud13 = new randomCluster();
+    layer2cloud14 = new randomCluster();
+    layer2cloud15 = new randomCluster();
+    layer2cloud16 = new randomCluster();
+    layer2cloud17 = new randomCluster();
+    layer2cloud18 = new randomCluster();
+    layer2cloud19 = new randomCluster();
+    layer2cloud20 = new randomCluster();
 
 }
 
@@ -468,6 +512,70 @@ function draw(){
     layer1cloud11.display(205,50,340,485,255,5);
     layer1cloud11.update();
 
+
+    //LAYER 2 CLOUDS
+    //xPos,size,cloudheight,cloudbottom,cloudspacing (note for self)
+
+    layer2cloud1.display(900,50,170,180,2);
+    layer2cloud1.update();
+
+    layer2cloud2.display(800,30,190,195,5);
+    layer2cloud2.update();
+
+    layer2cloud3.display(830,60,180,195,5);
+    layer2cloud3.update();
+
+    layer2cloud4.display(750,20,200,220,2);
+    layer2cloud4.update();
+
+    layer2cloud5.display(740,40,230,240,5);
+    layer2cloud5.update();
+
+    layer2cloud6.display(500,50,250,255,5);
+    layer2cloud6.update();
+
+    layer2cloud7.display(450,40,265,280,2);
+    layer2cloud7.update();
+
+    layer2cloud8.display(300,50,350,380,5);
+    layer2cloud8.update();
+
+    layer2cloud9.display(100,25,430,440,2);
+    layer2cloud9.update();
+
+    layer2cloud10.display(600,80,300,320,5);
+    layer2cloud10.update();
+
+    layer2cloud11.display(860,90,220,230,1);
+    layer2cloud11.update();
+
+    layer2cloud12.display(580,70,340,350,2);
+    layer2cloud12.update();
+
+    layer2cloud13.display(910,150,400,450,10);
+    layer2cloud13.update();
+
+    layer2cloud14.display(860,100,420,450,5);
+    layer2cloud14.update();
+
+    layer2cloud15.display(920,40,430,440,5);
+    layer2cloud15.update();
+
+    layer2cloud16.display(550,50,420,430,2);
+    layer2cloud16.update();
+
+    layer2cloud17.display(400,40,440,455,5);
+    layer2cloud17.update();
+
+    layer2cloud18.display(920,35,80,90,2);
+    layer2cloud18.update();
+
+    layer2cloud19.display(200,50,490,500,2);
+    layer2cloud19.update();
+
+   
+
+    //"WATER"
     fill(150);
     rect(0,487.5,width,200);
 
@@ -506,10 +614,6 @@ function draw(){
     vertex(0,572);
     vertex(0,567);
     endShape();
-
-       
-
-
 
 }
 
