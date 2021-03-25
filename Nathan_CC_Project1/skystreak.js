@@ -1,5 +1,4 @@
 //CLASS FOR THE TEAL STREAKS IN THE SKY
-
 class SkyStreak{
     constructor(){
         this.position = new createVector(0,0);
@@ -9,8 +8,7 @@ class SkyStreak{
     update(){
         let speed = -0.1;
         this.velocity = createVector(0,speed);
-        this.position.add(this.velocity);
-       
+        this.position.add(this.velocity);      
     }
 
     display(yPos){ //5 individual, layered beziers to achieve a "fade-out" effect
@@ -44,6 +42,5 @@ class SkyStreak{
         strokeWeight(3)
         stroke(31,169,191,t/2.35); //lightest
         bezier(0,this.position.y+yPos, 333, this.position.y+yPos+50, 666, this.position.y+yPos-30, width, this.position.y+yPos-15);
-
     }
 }

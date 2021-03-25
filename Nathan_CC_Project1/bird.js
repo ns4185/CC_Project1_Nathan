@@ -8,8 +8,7 @@ class Bird{
 
     update(){
         this.velocity = createVector(0,this.speed);
-        this.position.add(this.velocity);
-       
+        this.position.add(this.velocity);    
     }
 
     display(xPos,yPos){ //5 individual, layered beziers to achieve a "fade-out" effect
@@ -19,8 +18,6 @@ class Bird{
 
         curve(xPos,yPos+10+this.position.y,xPos,yPos-5,xPos-10,yPos-5,xPos-15+this.position.y,yPos+5);
         curve(xPos,yPos+10+this.position.y,xPos,yPos-5,xPos+10,yPos-5,xPos+15-this.position.y,yPos+5);
-
-
     }
 
     checkWings(){ //birds flap wings!
@@ -31,6 +28,5 @@ class Bird{
 	    else if (this.position.y <= 0) {
 	    	this.speed=1;
 	    }
-
   }
 }

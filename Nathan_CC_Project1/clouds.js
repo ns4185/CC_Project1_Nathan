@@ -1,5 +1,4 @@
 //CLASS FOR THE CLOUDS
-
 class Cloud{
     constructor(){
         this.position = new createVector(0,0);
@@ -9,8 +8,7 @@ class Cloud{
 
     update(){
         this.velocity = createVector(this.speed,0);
-        this.position.add(this.velocity);
-       
+        this.position.add(this.velocity);      
     }
 
     display(xPos,size,cloudheight,cloudbottom,cloudcolor,cloudspacing){
@@ -24,8 +22,7 @@ class Cloud{
         for (let yvalue=cloudbottom; yvalue>=cloudheight; yvalue-=cloudspacing){
             noStroke();
             fill(cloudcolor);
-            ellipse(xPos+this.position.x,yvalue,size,size);
-        
+            ellipse(xPos+this.position.x,yvalue,size,size);       
         }  
     }
 }
@@ -39,8 +36,7 @@ class Cluster{
 
     update(){
         this.velocity = createVector(this.speed,0);
-        this.position.add(this.velocity);
-       
+        this.position.add(this.velocity);       
     }
 
     display(xPos,size,cloudheight,cloudbottom,cloudspacing){
@@ -68,11 +64,8 @@ class Cluster{
             ellipse(xPos+5+this.position.x,yvalue+10,size,size);
             ellipse(xPos+15+this.position.x,yvalue+10,size,size);
             ellipse(xPos+25+this.position.x,yvalue+15,size,size);
-            ellipse(xPos+35+this.position.x,yvalue+10,size,size);
-        
+            ellipse(xPos+35+this.position.x,yvalue+10,size,size);     
         }
-
-    
     }
 }
 

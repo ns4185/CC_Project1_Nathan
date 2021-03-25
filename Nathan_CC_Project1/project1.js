@@ -513,8 +513,6 @@ function draw(){
     backgroundcluster5.update();
 
 
-
-
     //xPos,size,cloudheight, cloudbottom, cloudcolor,cloudspacing (note for self)
 
     backgroundcloud42.display(160,20,340,485,255,4);
