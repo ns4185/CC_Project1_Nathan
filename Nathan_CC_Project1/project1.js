@@ -83,7 +83,7 @@ let layer1cloud9;
 let layer1cloud10;
 let layer1cloud11;
 
-//CLOUDS - LAYER 3
+//CLOUDS - LAYER 2
 let layer2cloud1;
 let layer2cloud2;
 let layer2cloud3;
@@ -104,6 +104,18 @@ let layer2cloud17;
 let layer2cloud18;
 let layer2cloud19;
 let layer2cloud20;
+
+//CLOUDS - LAYER 3
+let layer3cloud1;
+let layer3cloud2;
+let layer3cloud3;
+let layer3cloud4;
+let layer3cloud5;
+let layer3cloud6;
+let layer3cloud7;
+let layer3cloud8;
+let layer3cloud9;
+let layer3cloud10;
 
 function setup(){
     createCanvas(1000,600);
@@ -212,6 +224,19 @@ function setup(){
     layer2cloud18 = new randomCluster();
     layer2cloud19 = new randomCluster();
     layer2cloud20 = new randomCluster();
+
+    //CLOUDS - LAYER 3
+    layer3cloud1 = new Cloud();
+    layer3cloud2 = new Cloud();
+    layer3cloud3 = new Cloud();
+    layer3cloud4 = new Cloud();
+    layer3cloud5 = new Cloud();
+    layer3cloud6 = new Cloud();
+    layer3cloud7 = new Cloud();
+    layer3cloud8 = new Cloud();
+    layer3cloud9 = new Cloud();
+    layer3cloud10 = new Cloud();
+    layer3cloud11 = new Cloud();
 
 }
 
@@ -573,7 +598,37 @@ function draw(){
     layer2cloud19.display(200,50,490,500,2);
     layer2cloud19.update();
 
+    //LAYER 3 CLOUDS
+    //xPos,size,cloudheight, cloudbottom, cloudcolor,cloudspacing (note for self)
+    layer3cloud1.display(430,20,300,310,240,5);
+    layer3cloud1.update();
+
+    layer3cloud2.display(450,30,325,350,245,25);
+    layer3cloud2.update();
+
+    layer3cloud3.display(440,20,340,360,250,5);
+    layer3cloud3.update();
+
+    layer3cloud4.display(720,30,300,325,250,5);
+    layer3cloud4.update();
    
+    layer3cloud5.display(730,20,310,315,255,1);
+    layer3cloud5.update();
+
+    layer3cloud6.display(640,30,150,160,250,5);
+    layer3cloud6.update();
+
+    layer3cloud7.display(680,20,170,175,252,1);
+    layer3cloud7.update();
+
+    layer3cloud8.display(750,30,410,420,240,5);
+    layer3cloud8.update();
+
+    layer3cloud9.display(740,30,415,425,250,5);
+    layer3cloud9.update();
+
+    layer3cloud10.display(200,40,400,405,250,1);
+    layer3cloud10.update();
 
     //"WATER"
     fill(150);
