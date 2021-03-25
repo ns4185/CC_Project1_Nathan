@@ -57,7 +57,7 @@ class Cluster{
             ellipse(xPos-10+this.position.x,yvalue+5,size,size);
             ellipse(xPos-14+this.position.x,yvalue+15,size,size);
 
-            fill(230);
+            fill(240);
             ellipse(xPos-5+this.position.x,yvalue+10,size,size);
             ellipse(xPos+5+this.position.x,yvalue+10,size,size);
             ellipse(xPos+15+this.position.x,yvalue+10,size,size);

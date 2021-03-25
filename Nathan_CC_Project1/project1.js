@@ -237,6 +237,7 @@ function setup(){
     layer3cloud9 = new Cloud();
     layer3cloud10 = new Cloud();
     layer3cloud11 = new Cloud();
+    
 
 }
 
@@ -273,6 +274,19 @@ function draw(){
 
     streak6.display(20);
     streak6.update();
+
+    //SKY GRADIENT
+    fill(0,34,54,20);
+    noStroke();
+    rect(0,0,width,70);
+    rect(0,0,width,65);
+    rect(0,0,width,60);
+    rect(0,0,width,55);
+    rect(0,0,width,50);
+    rect(0,0,width,45);
+    rect(0,0,width,40);
+    rect(0,0,width,35);
+    rect(0,0,width,30);
     
 
     //BACKGROUND CLOUDS
@@ -630,9 +644,38 @@ function draw(){
     layer3cloud10.display(200,40,400,405,250,1);
     layer3cloud10.update();
 
-    //"WATER"
-    fill(150);
+    //"WATER" - all of these rectangles are here to create a gradient effect since I don't know how to do that yet!
+    fill(32.5,89.5,96.5,40);
     rect(0,487.5,width,200);
+    rect(0,487.5,width,130);
+    rect(0,487.5,width,125);
+    rect(0,487.5,width,120);
+    rect(0,487.5,width,115);
+    rect(0,487.5,width,110);
+
+    fill(55.5,140.3,160.1,100);
+    rect(0,487.5,width,105);
+    rect(0,487.5,width,100);
+    rect(0,487.5,width,95);
+    rect(0,487.5,width,90);
+    rect(0,487.5,width,85);
+
+    fill(65,179,193,150);
+    rect(0,487.5,width,80);
+    rect(0,487.5,width,75);
+    rect(0,487.5,width,70);
+
+    fill(65,179,193,255);
+    rect(0,487.5,width,60);
+
+    fill(50,150,180,255);
+    rect(0,487.5,width,6);
+    
+    fill(40,100,150,255);
+    rect(0,487.5,width,3);
+
+    fill(30,50,100,255);
+    rect(0,487.5,width,1);
 
     //"PIER"
         //LEFT-SIDE LEGS
