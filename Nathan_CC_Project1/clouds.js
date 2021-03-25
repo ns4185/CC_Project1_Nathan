@@ -93,7 +93,7 @@ class randomCluster{ //fill is random values of gray
 
         for (let yvalue=cloudbottom; yvalue>=cloudheight; yvalue-=cloudspacing){
             noStroke();
-            fill(255-this.colorvalue/2);
+            fill(255-this.colorvalue/3);
             ellipse(xPos+this.position.x,yvalue,size,size);
             ellipse(xPos+10+this.position.x,yvalue+5,size,size);
             ellipse(xPos+20+this.position.x,yvalue+5,size,size);
@@ -102,7 +102,7 @@ class randomCluster{ //fill is random values of gray
             ellipse(xPos-10+this.position.x,yvalue+5,size,size);
             ellipse(xPos-14+this.position.x,yvalue+15,size,size);
 
-            fill(230-this.colorvalue);
+            fill(250-this.colorvalue);
             ellipse(xPos-5+this.position.x,yvalue+10,size,size);
             ellipse(xPos+5+this.position.x,yvalue+10,size,size);
             ellipse(xPos+15+this.position.x,yvalue+10,size,size);
