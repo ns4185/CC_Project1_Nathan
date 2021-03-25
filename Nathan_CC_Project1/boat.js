@@ -21,7 +21,7 @@ class Boat{
            }  
 
         fill('#473C24');
-        noStroke;
+        noStroke();
         beginShape();
         vertex(this.position.x+xPos-10,480); //body
         vertex(this.position.x+xPos+10,480);
