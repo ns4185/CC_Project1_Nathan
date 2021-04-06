@@ -745,50 +745,52 @@ function draw(){
     //BIRDS
     if (birdscale<0.95){
         push();
+        translate(birdscale*100,birdscale*100);
         scale(1-birdscale);
-        bird1.display(100+(150*birdscale),100+(100*birdscale));
+        bird1.display(100,100);
         bird1.update();
         bird1.checkWings();
 
-        bird2.display(120+(150*birdscale),120+(100*birdscale));
+        bird2.display(120,120);
         bird2.update();
         bird2.checkWings();
 
-        bird3.display(90+(150*birdscale),115+(100*birdscale));
+        bird3.display(90,115);
         bird3.update();
         bird3.checkWings();
 
-        bird4.display(100+(150*birdscale),130+(100*birdscale));
+        bird4.display(100,130);
         bird4.update();
         bird4.checkWings();
 
-        bird5.display(130+(150*birdscale),140+(100*birdscale));
+        bird5.display(130,140);
         bird5.update();
         bird5.checkWings();
 
-        birdscale = birdscale + 0.0005;
+        birdscale = birdscale + 0.0003;
         pop();
     } else{
         push();
         birdscale = 0.95;
+        translate(birdscale*100,birdscale*100);
         scale(1-birdscale);
-        bird1.display(100+(150*birdscale),100+(100*birdscale));
+        bird1.display(100,100);
         bird1.update();
         bird1.checkWings();
 
-        bird2.display(120+(150*birdscale),120+(100*birdscale));
+        bird2.display(120,120);
         bird2.update();
         bird2.checkWings();
 
-        bird3.display(90+(150*birdscale),115+(100*birdscale));
+        bird3.display(90,115);
         bird3.update();
         bird3.checkWings();
 
-        bird4.display(100+(150*birdscale),130+(100*birdscale));
+        bird4.display(100,130);
         bird4.update();
         bird4.checkWings();
 
-        bird5.display(130+(150*birdscale),140+(100*birdscale));
+        bird5.display(130,140);
         bird5.update();
         bird5.checkWings();
         pop();
