@@ -133,6 +133,9 @@ let boat4;
 //VARIABLE FOR BIRD SIZE
 let birdscale=0;
 
+//WATER
+let water1, water2, water3, water4, water5, water6, water7, water8, water9, water10, water11, water12, water13, water14;
+
 
 function setup(){
     createCanvas(1000,600);
@@ -268,6 +271,22 @@ function setup(){
     boat2 = new Boat();
     boat3 = new Boat();
     boat4 = new Boat();
+
+    //WATER
+    water1 = new Water();
+    water2 = new Water();
+    water3 = new Water();
+    water4 = new Water();
+    water5 = new Water();
+    water6 = new Water();
+    water7 = new Water();
+    water8 = new Water();
+    water9 = new Water();
+    water10 = new Water();
+    water11 = new Water();
+    water12 = new Water();
+    water13 = new Water();
+    water14 = new Water();
 
 }
 
@@ -664,24 +683,50 @@ function draw(){
 
     //"WATER" - all of these rectangles are here to create a gradient effect since I don't know how to do that yet!
     fill(32.5,89.5,96.5,40);
-    rect(0,487.5,width,200);
-    rect(0,487.5,width,130);
-    rect(0,487.5,width,125);
-    rect(0,487.5,width,120);
-    rect(0,487.5,width,115);
-    rect(0,487.5,width,110);
+    water1.display(487.5,200); 
+    water1.update();
+
+    water2.display(487.5,130);
+    water2.update();
+
+    water3.display(487.5,125);
+    water3.update();
+
+    water4.display(487.5,120);
+    water4.update();
+
+    water5.display(487.5,115);
+    water5.update();
+
+    water6.display(487.5,110);
+    water6.update();
 
     fill(55.5,140.3,160.1,100);
-    rect(0,487.5,width,105);
-    rect(0,487.5,width,100);
-    rect(0,487.5,width,95);
-    rect(0,487.5,width,90);
-    rect(0,487.5,width,85);
+    water7.display(487.5,105);
+    water7.update();
 
-    fill(65,179,193,150);
-    rect(0,487.5,width,80);
-    rect(0,487.5,width,75);
-    rect(0,487.5,width,70);
+    water8.display(487.5,100);
+    water8.update();
+
+    water9.display(487.5,95);
+    water9.update();
+
+    water10.display(487.5,90);
+    water10.update();
+
+    water11.display(487.5,85);
+    water11.update();
+
+
+    fill(65,179,193,150); 
+    water12.display(487.5,80);
+    water12.update();
+
+    water13.display(487.5,75);
+    water13.update();
+
+    water14.display(487.5,70);
+    water14.update();
 
     fill(65,179,193,255);
     rect(0,487.5,width,60);
@@ -694,6 +739,7 @@ function draw(){
 
     fill(30,50,100,255);
     rect(0,487.5,width,1);
+
 
     //"PIER"
         //SHADOW
