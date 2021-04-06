@@ -6,7 +6,7 @@ class SkyStreak{
     }
 
     update(){
-        let speed = -0.1;
+        let speed = -0.2;
         this.velocity = createVector(0,speed);
         this.position.add(this.velocity);      
     }

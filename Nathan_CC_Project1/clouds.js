@@ -59,7 +59,7 @@ class Cluster{
             ellipse(xPos-10+this.position.x,yvalue+5,size,size);
             ellipse(xPos-14+this.position.x,yvalue+15,size,size);
 
-            fill(240);
+            fill(245);
             ellipse(xPos-5+this.position.x,yvalue+10,size,size);
             ellipse(xPos+5+this.position.x,yvalue+10,size,size);
             ellipse(xPos+15+this.position.x,yvalue+10,size,size);
@@ -104,7 +104,7 @@ class randomCluster{ //fill is random values of gray
             ellipse(xPos-10+this.position.x,yvalue+5,size,size);
             ellipse(xPos-14+this.position.x,yvalue+15,size,size);
 
-            fill(250-this.colorvalue);
+            fill(255-this.colorvalue)/2;
             ellipse(xPos-5+this.position.x,yvalue+10,size,size);
             ellipse(xPos+5+this.position.x,yvalue+10,size,size);
             ellipse(xPos+15+this.position.x,yvalue+10,size,size);

@@ -130,6 +130,10 @@ let boat2;
 let boat3;
 let boat4;
 
+//VARIABLE FOR BIRD SIZE
+let birdscale=0;
+
+
 function setup(){
     createCanvas(1000,600);
 
@@ -264,6 +268,7 @@ function setup(){
     boat2 = new Boat();
     boat3 = new Boat();
     boat4 = new Boat();
+
 }
 
 function draw(){
@@ -351,7 +356,7 @@ function draw(){
     backgroundcloud5.display(915,30,30,485,255,10);
     backgroundcloud5.update();
 
-    backgroundcloud8.display(870,40,36,485,200,15);
+    backgroundcloud8.display(870,40,36,485,230,15);
     backgroundcloud8.update();
 
     backgroundcloud6.display(890,28,36,485,255,4);
@@ -363,7 +368,7 @@ function draw(){
     backgroundcloud10.display(840,35,50,485,255,10);
     backgroundcloud10.update();
 
-    backgroundcloud12.display(808,20,70,485,200,5);
+    backgroundcloud12.display(808,20,70,485,230,5);
     backgroundcloud12.update();
 
     backgroundcloud11.display(820,30,50,485,255,10);
@@ -387,7 +392,7 @@ function draw(){
     backgroundcloud18.display(720,50,120,485,255,10);
     backgroundcloud18.update();
 
-    backgroundcloud21.display(680,50,130,485,200,10);
+    backgroundcloud21.display(680,50,130,485,230,10);
     backgroundcloud21.update();
 
     backgroundcloud19.display(700,20,120,485,255,5);
@@ -414,7 +419,7 @@ function draw(){
     backgroundcloud27.display(595,20,124,485,255,2);
     backgroundcloud27.update();
 
-    backgroundcloud29.display(588,15,128,485,200,2);
+    backgroundcloud29.display(588,15,128,485,230,2);
     backgroundcloud29.update();
 
     backgroundcloud28.display(588,18,132,485,255,2);
@@ -738,25 +743,56 @@ function draw(){
 
 
     //BIRDS
-    bird1.display(100,100);
-    bird1.update();
-    bird1.checkWings();
+    if (birdscale<0.95){
+        push();
+        scale(1-birdscale);
+        bird1.display(100+(150*birdscale),100+(100*birdscale));
+        bird1.update();
+        bird1.checkWings();
 
-    bird2.display(120,120);
-    bird2.update();
-    bird2.checkWings();
+        bird2.display(120+(150*birdscale),120+(100*birdscale));
+        bird2.update();
+        bird2.checkWings();
 
-    bird3.display(90,115);
-    bird3.update();
-    bird3.checkWings();
+        bird3.display(90+(150*birdscale),115+(100*birdscale));
+        bird3.update();
+        bird3.checkWings();
 
-    bird4.display(100,130);
-    bird4.update();
-    bird4.checkWings();
+        bird4.display(100+(150*birdscale),130+(100*birdscale));
+        bird4.update();
+        bird4.checkWings();
 
-    bird5.display(130,140);
-    bird5.update();
-    bird5.checkWings();
+        bird5.display(130+(150*birdscale),140+(100*birdscale));
+        bird5.update();
+        bird5.checkWings();
+
+        birdscale = birdscale + 0.0005;
+        pop();
+    } else{
+        push();
+        birdscale = 0.95;
+        scale(1-birdscale);
+        bird1.display(100+(150*birdscale),100+(100*birdscale));
+        bird1.update();
+        bird1.checkWings();
+
+        bird2.display(120+(150*birdscale),120+(100*birdscale));
+        bird2.update();
+        bird2.checkWings();
+
+        bird3.display(90+(150*birdscale),115+(100*birdscale));
+        bird3.update();
+        bird3.checkWings();
+
+        bird4.display(100+(150*birdscale),130+(100*birdscale));
+        bird4.update();
+        bird4.checkWings();
+
+        bird5.display(130+(150*birdscale),140+(100*birdscale));
+        bird5.update();
+        bird5.checkWings();
+        pop();
+    }
 
 }
 
